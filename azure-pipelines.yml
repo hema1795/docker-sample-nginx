@@ -44,10 +44,7 @@ stages:
         azureSubscription: 'Pay-As-You-Go(46e3c00a-054d-4c1b-8c12-08abdbbbebf3)'
         appType: 'webAppContainer'
         WebAppName: 'nginxapp12'
-        deployToSlotOrASE: true
-        ResourceGroupName: 'nginx'
-        SlotName: 'production'
         DockerNamespace: 'mitun.azurecr.io'
         DockerRepository: 'hemadockersamplenginx'
-        tag: '$(Build.BuildId)'
+        DockerImageTag: $(Build.BuildId)
     
