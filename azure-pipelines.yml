@@ -49,4 +49,5 @@ stages:
         SlotName: 'production'
         DockerNamespace: 'mitun.azurecr.io'
         DockerRepository: 'hemadockersamplenginx'
+        tag: '$(Build.BuildId)'
     
